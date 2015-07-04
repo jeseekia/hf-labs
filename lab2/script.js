@@ -38,3 +38,7 @@ function printGroceryList(){
 }
 
 printGroceryList();
+
+
+//I would like to add a function the constructor that automatically pushes a new
+//grocery object to the groceryList array.
