@@ -25,7 +25,16 @@ groceryList.push(kale,avocado);
 // console.log(groceryList[0]);
 // console.log(groceryList[0].name);
 
-// Print grocery List
-for(var i=0; i<groceryList.length; i++) {
-  console.log(groceryList[i].name + " " + groceryList[i].price);
+// Print grocery List with Total
+function printGroceryList(){
+  var total = 0;
+
+  for(var i=0; i<groceryList.length; i++) {
+    console.log(groceryList[i].name + " " + groceryList[i].price);
+    total += groceryList[i].price;
+  }
+
+    console.log("Total: " + total);
 }
+
+printGroceryList();
