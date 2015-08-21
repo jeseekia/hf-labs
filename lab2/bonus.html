@@ -17,22 +17,33 @@
       <h2>
         Grocery List
       </h2>
-      <ul>
+
+      <ul id="list">
 
       </ul>
+
       <h3>
         Total: <span id='total'></span>
       </h3>
     </section>
 
     <section>
-      <h2></h2>
-      <p></p>
+      <form action="" method="post">
+        <h2>Add items</h2>
+        <p>
+          Item Name:
+          <input id="namez" type="text" name="namez"/>
+          Item Price:
+          <input id="pricez" type="text" name="pricez"/>
+          <input type="submit" name="Add" value="Add" id="addbutton"/>
+          <button >Click</button>
+        </p>
+      </form>
     </section>
 
     <footer>
     </footer>
   </body>
-
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="bonus.js"></script>
 </html>
