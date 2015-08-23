@@ -58,3 +58,4 @@ function showGroceryList(){
   document.getElementById('total').innerText = newTotal;
 }
 showGroceryList();
+.
