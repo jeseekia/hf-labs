@@ -22,7 +22,7 @@
     <section id="seats" class="container">
 
       <div class="row">
-        <div class="col-xs-4 col-md-4"><button type="button" id="btn" class="btn btn-success">Seat 1</button></div>
+        <div class="col-xs-4 col-md-4"><button type="button" name="1" id="btn" class="btn btn-success">Seat 1</button></div>
         <div class="col-xs-4 col-md-4"><button type="button" class="btn btn-success">Seat 2</button></div>
         <div class="col-xs-4 col-md-4"><button type="button" class="btn btn-success">Seat 3</button></div>
       </div>
@@ -74,10 +74,10 @@
     <section id="reservation" class="container">
       <form class="form-inline">
         <div class="form-group">
-          <input type="text" name="firstname" value="First Name" class="form-control" required>
-          <input type="text" name="lastname" value="Last Name" class="form-control" required>
-          <input type="email" name="email" value="Email" class="form-control" required>
-          <input type="submit" value="Request" class="btn btn-default" required>
+          <input type="text" name="firstname" value="First Name" id="firstName" class="form-control" required>
+          <input type="text" name="lastname" value="Last Name" id="lastName" class="form-control" required>
+          <input type="email" name="email" value="Email" id="email" class="form-control" required>
+          <input type="submit" value="Request" id="addbutton" class="btn btn-default" required>
         </div>
       </form>
     </section>
