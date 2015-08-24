@@ -2,9 +2,7 @@
 // Try Use visibility: hidden or display: none and use function to change value on form
 var reservationForm = document.getElementById('reservation');
 var reserveButton = document.getElementsByClassName('btn-success');
-// var reserveButton = document.getElementById('btn');
-// var reserveButton = document.getElementsByTagName('button');
-
+var anyButton = document.getElementsByTagName('button');
 var clickedButtonName;
 var clickedButton;
 
@@ -12,10 +10,9 @@ for (var i=0; i < reserveButton.length; i++) {
   reserveButton[i].onclick = function(event){
     // event.preventDefault();
     reservationForm.style.visibility='visible';
-    // var clickedButtonName = reserveButton[i].name;
     clickedButtonName = this.name;
     clickedButton = this;
-    console.log(clickedButton);
+    // console.log(clickedButton);
     return clickedButton;
   }
 }
@@ -58,3 +55,17 @@ formItems.onclick= function(event){
 // Adding jQuery functionality
 
 // When hovering over .btn-danger show values for corresponding reservedSeat object
+// Horrible code block that is suffering from my brain fatigue!
+
+for (var i=0; i < anyButton.length; i++) {
+  var hoverButton = anyButton[i];
+  $(hoverButton).hover(
+    function(){
+
+      if(anyButton[i].name === reservedSeatList[0].seat)
+      {
+        $("p").html(reservedSeat[0].fname);
+      }
+    }
+  )
+}
