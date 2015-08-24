@@ -1,0 +1,24 @@
+/**********
+SEAT RESERVATION BUTTONS
+**********/
+#seats .btn {
+  width: 100px;
+  height: 50px;
+}
+
+
+/**********
+RESERVATION FORM
+**********/
+#reservation {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  visibility:hidden;
+
+}
+
+
+
+/**********
+
+**********/
