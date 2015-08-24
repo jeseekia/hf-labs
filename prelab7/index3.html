@@ -18,11 +18,12 @@
         Favorite Band/Group Roster
       </h1>
     </section>
-    <div ng-init="destinysChild=['Beyonce','Kelly','Michelle']"></div>
-    <section ng-app="">
-
-    </section>
-
+    <div ng-init="destinysChild=['Beyonce','Kelly','Michelle']">
+      <section ng-app="">
+        <h3>Destiny's Child Members</h3>
+          <p ng-repeat="child in destinysChild"> {{child}}</p>
+      </section>
+    </div>
     <footer>
     </footer>
   </body>
