@@ -19,7 +19,8 @@ xhr.onload = function() {
         score = reddit.data.children[i].data.score;
         title = reddit.data.children[i].data.title;
 
-        $("section").append("Title: " + title  + "<br>" + "Author: " + author  + "<br>" + "Score: " + score + "<br>");
+        $("section").append("<div class='post'>" +
+        "Title: " + title  + "<br>" + "Author: " + author  + "<br>" + "Score: " + score + "<br>" + "</div>");
 
       }
 
