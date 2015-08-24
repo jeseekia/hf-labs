@@ -17,33 +17,30 @@
       <h1>
         Poor (Wo)man's MadLibs
       </h1>
-
-      <h3>
-
-      </h3>
-      <h3>
-
-      </h3>
     </section>
 
-    <section>
+    <section ng-app="">
       <form action="" method="post">
         <h2>Add items</h2>
         <p>
-          Item Name:
-          <input id="namez" type="text" name="namez"/>
-          Item Price:
-          <input id="pricez" type="text" name="pricez"/>
+          Noun:
+          <input id="nounz" type="text" name="nounz" ng-model="noun"/>
+          Adjective:
+          <input id="adjectivez" type="text" name="adjectivez" ng-model="adjective"/>
           <input type="submit" name="Add" value="Add" id="addbutton"/>
           <button >Click</button>
         </p>
       </form>
+      <h3>
+          {{noun}} {{adjective}}
+      </h3>
+
     </section>
 
     <footer>
     </footer>
   </body>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="angular.js"></script>
+  <script src="angular.min.js"></script>
   <!-- <script src="bonus.js"></script> -->
 </html>
