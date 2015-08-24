@@ -6,6 +6,7 @@ var reserveButton = document.getElementsByClassName('btn-success');
 // var reserveButton = document.getElementsByTagName('button');
 
 var clickedButtonName;
+
 for (var i=0; i < reserveButton.length; i++) {
   reserveButton[i].onclick = function(event){
     // event.preventDefault();
