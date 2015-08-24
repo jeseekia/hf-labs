@@ -3,7 +3,7 @@ SEAT RESERVATION BUTTONS
 **********/
 #seats .btn {
   width: 100px;
-  height: 100px;
+  height: 50px;
 }
 
 
@@ -11,8 +11,8 @@ SEAT RESERVATION BUTTONS
 RESERVATION FORM
 **********/
 #reservation {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 
 }
