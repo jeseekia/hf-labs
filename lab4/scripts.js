@@ -47,3 +47,9 @@ formItems.onclick= function(event){
   outcome = new reservedSeat(fname,lname,seat,emaill);
   // console.log(outcome);
 }
+
+
+// Adding jQuery functionality
+// Add class .btn-danger and .disabled to clicked button when form is submitted
+// Removeclass .btn-success to clicked button when form is submitted
+// When hovering over .btn-danger show values for corresponding reservedSeat object
