@@ -11,11 +11,18 @@ xhr.onload = function() {
     $.getJSON("http://www.reddit.com/r/aww.json", function(reddit){
       console.log(reddit.data.children[0].data.author);
 
+      // Looping through the array of posts
       for (var i = 0; i < reddit.data.children.length; i++) {
         console.log(reddit.data.children[i]);
+
+        author = reddit.data.children[i].data.author;
+        score = reddit.data.children[i].data.score;
+        title = reddit.data.children[i].data.title;
+
+        $("section").html("Title: " + title  );
+
       }
 
-      author = reddit.data.children[0].data.author;
     })
     .done(function() {
       console.log( "second success" );
